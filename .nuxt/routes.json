@@ -1,0 +1,15 @@
+[
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/var/www/sv-rikugien/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_3d5c3126"
+  },
+  {
+    "name": "404error",
+    "path": "*",
+    "component": "~/pages/index.vue",
+    "_name": "_2563ddd0"
+  }
+]

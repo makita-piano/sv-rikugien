@@ -1,0 +1,18 @@
+{
+  "name": "share-vie-rikugien",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --hostname 118.27.39.173 --port 8765",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "nuxt": "^2.15.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^1.3.0"
+  }
+}
