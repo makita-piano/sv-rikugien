@@ -17,6 +17,9 @@
           シェアハウスに興味がある方、もくもく作業したい方、就活合間のお茶スペースをお探しの方、、、
           どんな方でも大丈夫です！楽しい使い方をあなたが見つけてください。
         </div>
+        <div class="padding-1 center-align">
+          <a href="https://tokyosharehouse.com/jpn/house/detail/392/" target="_blank">外観(TOKYO SHAREHOUSE様より)</a>
+        </div>
       </div>
     </div>
     <div class="bg-color">
@@ -47,55 +50,55 @@
         <div class="grid" style="text-align: center">
           <div class="col-4_sm-6" @click="openModal(1)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/wifi.jpg" width="100%" style="" alt="env-1">
+              <img src="~/assets/wifi.jpg" width="100%" style="" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Wi-Fi</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(2)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/moniter.jpg" width="100%" alt="env-2">
+              <img src="~/assets/moniter.jpg" width="100%" alt="env-2">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">モニター</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(3)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/power.jpg" width="100%" alt="env-1">
+              <img src="~/assets/power.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">電源</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(4)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/water.jpg" width="100%" alt="env-1">
+              <img src="~/assets/water.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">加湿器</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(5)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/oculus.jpg" width="100%" alt="env-1">
+              <img src="~/assets/oculus.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Oculus Quest</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(6)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/kitchen.jpg" width="100%"　alt="env-1">
+              <img src="~/assets/kitchen.jpg" width="100%"　alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">キッチン</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(7)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/beer.jpg" width="100%" alt="env-1">
+              <img src="~/assets/beer.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">発泡酒</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(8)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/onion.jpg" width="100%" alt="env-1">
+              <img src="~/assets/onion.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">玉ねぎ</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(9)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="/coffee.jpg" width="100%" alt="env-1">
+              <img src="~/assets/coffee.jpg" width="100%" alt="env-1">
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
           </div>
@@ -210,39 +213,39 @@
         if(number == 1){
           this.text = "まあまあの速度がでます。";
           this.title = "Wi-Fi";
-          this.img = "wifi2.jpg";
+          this.img = require("~/assets/wifi2.jpg");
         }else if(number == 2){
           this.text = "2台用意がございます。台を高くすればスタンドデスクも可能です。";
           this.title = "モニター";
-          this.img = "moniter2.jpg";
+          this.img = require("~/assets/moniter2.jpg");
         }else if(number == 3){
           this.text = "多数ございます";
           this.title = "電源";
-          this.img = "power.jpg";
+          this.img = require("~/assets/power.jpg");
         }else if(number == 4){
           this.text = "加湿器のほか、暖房や換気など空調調節いただけます。";
           this.title = "加湿器";
-          this.img = "water.jpg";
+          this.img = require("~/assets/water.jpg");
         }else if(number == 5){
           this.text = "VRゲームです。「beat saber」のアプリがインストールされています。休憩にどうぞ";
           this.title = "Oculus Quest";
-          this.img = "oculus.jpg";
+          this.img = require("~/assets/oculus.jpg");
         }else if(number == 6){
           this.text = "食材の持ち込みも可です。住人がいないので、冷蔵庫も空気を冷やして待っています。自由にお使いください。";
           this.title = "キッチン";
-          this.img = "cool.jpg";
+          this.img = require("~/assets/cool.jpg");
         }else if(number == 7){
           this.text = "アサヒのスタイルフリーは私が好きなのでサービスです。";
           this.title = "発泡酒";
-          this.img = "beer.jpg";
+          this.img = require("~/assets/beer.jpg");
         }else if(number == 8){
           this.text = "買いすぎてしまったのでサービスです。";
           this.title = "玉ねぎ";
-          this.img = "onion.jpg";
+          this.img = require("~/assets/onion.jpg");
         }else if(number == 9){
           this.text = "賞味期限が切れているのでサービスです。";
           this.title = "coffee";
-          this.img = "coffee.jpg";
+          this.img = require("~/assets/coffee.jpg");
         }
       },
       closeModal() {
@@ -278,7 +281,7 @@ html {
   font-weight: 500;
 }
 header {
-  background: url(/1_large.jpg) center center / cover no-repeat;
+  background: url("~/assets/main.jpg") center center / cover no-repeat;
     height: 70vh;
     justify-content: center;
     position: relative;

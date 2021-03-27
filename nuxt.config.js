@@ -14,7 +14,7 @@ export default {
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'share-vie-rikugien' },
       { hid: 'og:description', property: 'og:description', content: 'pシェアハウスを体験してみませんか？立地は駒込駅から徒歩５分。１日、コワーキングスペースのような使い方をしていただいて大丈夫です！' },
-      { hid: 'og:image', property: 'og:image', content: '/1_large.jpg' },
+      { hid: 'og:image', property: 'og:image', content: '/main.jpg' },
       { hid: 'og:url', property: 'og:url', content: 'https://sv-rikugien.klavier.page' },
     ],
     link: [
@@ -37,7 +37,8 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@aceforth/nuxt-optimized-images'
   ],
 
   googleFonts: {
@@ -46,6 +47,10 @@ export default {
       'Sofia': true,
     },
     display: 'swap'
+  },
+
+  optimizedImages: {
+    optimizeImages: true
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
