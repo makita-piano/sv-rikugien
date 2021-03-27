@@ -38,7 +38,7 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     '@nuxtjs/google-fonts',
-    '@aceforth/nuxt-optimized-images'
+    '@nuxt/image'
   ],
 
   googleFonts: {
@@ -47,10 +47,6 @@ export default {
       'Sofia': true,
     },
     display: 'swap'
-  },
-
-  optimizedImages: {
-    optimizeImages: true
   },
 
   // Modules (https://go.nuxtjs.dev/config-modules)

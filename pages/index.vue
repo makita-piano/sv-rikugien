@@ -1,13 +1,12 @@
 <template>
   <div>
     <header>
-      <h1>シェアヴィ六義園</h1>
     </header>
     <div>
       <div class="waku">
-        <h2>
+        <h1>
           募集内容
-        </h2>
+        </h1>
         <div class="bounce">
           シェアハウスに住人が<br class="display-none-pc"><span class="watashi">私</span>だけになってしまいました・・・！
         </div>
@@ -38,7 +37,7 @@
           受入人数
         </h2>
         <div class="center-align">
-          同時に1-3名まで。
+          同時に1-3名程度まで。
         </div>
       </div>
     </div>
@@ -50,55 +49,55 @@
         <div class="grid" style="text-align: center">
           <div class="col-4_sm-6" @click="openModal(1)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/wifi.jpg" width="100%" style="" alt="env-1">
+              <nuxt-img src="/wifi.jpg" width="230px" class="max-width-100" alt="env-1" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Wi-Fi</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(2)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/moniter.jpg" width="100%" alt="env-2">
+              <nuxt-img src="/moniter.jpg" width="230px" class="max-width-100" alt="env-2" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">モニター</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(3)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/power.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/power.jpg" width="230px" class="max-width-100" alt="env-3" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">電源</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(4)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/water.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/water.jpg" width="230px" class="max-width-100" alt="env-4" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">加湿器</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(5)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/oculus.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/oculus.jpg" width="230px" class="max-width-100" alt="env-5" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Oculus Quest</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(6)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/kitchen.jpg" width="100%"　alt="env-1">
+              <nuxt-img src="/kitchen.jpg" width="230px" class="max-width-100" alt="env-6" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">キッチン</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(7)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/beer.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/beer.jpg" width="230px" class="max-width-100" alt="env-7" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">発泡酒</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(8)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/onion.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/onion.jpg" width="230px" class="max-width-100" alt="env-8" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">玉ねぎ</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(9)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <img src="~/assets/coffee.jpg" width="100%" alt="env-1">
+              <nuxt-img src="/coffee.jpg" width="230px" class="max-width-100" alt="env-9" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
           </div>
@@ -150,16 +149,39 @@
           予約方法
         </h2>
         <div class="padding-1">
-          <div class="center-align">
+          <div class="center-align" style="margin: .5rem 0">
             <a href="https://timerex.net/s/makki/1a4a6cbf">https://timerex.net/s/makki/1a4a6cbf</a>
           </div>
           <TimeRex />
-          備考欄に<利用終了時刻><利用人数>をお書きください。
-          その後、予約確定メールをお送りします。人数超過の場合はお断りする場合がございます。
+          <div style="margin-top: .5rem">
+            備考欄に<利用終了時刻><利用人数>をお書きください。
+            その後、予約確定メールをお送りします。予約は初めの１枠のみで大丈夫です。人数超過の場合はお断りする場合がございます。
+          </div>
         </div>
       </div>
     </div>
     <div class="bg-color">
+      <div class="waku">
+        <h2>
+          貸出実績
+        </h2>
+        <div class="padding-1">
+          <table style="padding: 0 2rem;border-collapse: collapse;width: 100%">
+            <tbody>
+              <tr v-for="i in day">
+                <th style="">
+                  {{ i["day"] }}
+                </th>
+                <td style="border: 1px solid #000;padding: 1rem;border-collapse: collapse">
+                  {{ i["text"]}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="">
       <div class="waku">
         <h2>
           わたしについて
@@ -183,9 +205,9 @@
           </div>
           <div class="modal-content" style="overflow-y: auto;max-height: 80vh;">
             <div class="grid col-12">
-              <div class="col-12" style="max-width: 777px;margin: auto">
-                <img :src="img" width="100%" style="height: 50vh;object-fit: cover;" alt="env-1">
-                <div class="col-12" style="padding: 1rem">
+              <div class="col-12" style="max-width: 777px;margin: auto;text-align: center">
+                <nuxt-img :src="img" width="300px" style="height: auto" alt="env-1" />
+                <div class="col-12" style="padding: 1rem;text-align: left">
                   {{ text }}
                 </div>
               </div>
@@ -205,6 +227,30 @@
         modal: false,
         text: undefined,
         img: undefined,
+        day: [
+          {day: "3/26" , text: "サービス開始"},
+          {day: "3/27" , text: "３名"},
+          {day: "3/28" , text: " - "},
+          {day: "3/29" , text: " - "},
+          {day: "3/30" , text: " - "},
+          {day: "3/31" , text: " - "},
+          {day: "4/01" , text: " - "},
+          {day: "4/02" , text: " - "},
+          {day: "4/03" , text: " - "},
+          {day: "4/04" , text: " - "},
+          {day: "4/05" , text: " - "},
+          {day: "4/06" , text: " - "},
+          {day: "4/07" , text: " - "},
+          {day: "4/08" , text: " - "},
+          {day: "4/09" , text: " - "},
+          {day: "4/10" , text: " - "},
+          {day: "4/11" , text: " - "},
+          {day: "4/12" , text: " - "},
+          {day: "4/13" , text: " - "},
+          {day: "4/14" , text: " - "},
+          {day: "4/15" , text: " - "},
+          {day: "4/16" , text: " - "},
+        ]
       }
     },
     methods: {
@@ -213,39 +259,39 @@
         if(number == 1){
           this.text = "まあまあの速度がでます。";
           this.title = "Wi-Fi";
-          this.img = require("~/assets/wifi2.jpg");
+          this.img = "/wifi2.jpg";
         }else if(number == 2){
           this.text = "2台用意がございます。台を高くすればスタンドデスクも可能です。";
           this.title = "モニター";
-          this.img = require("~/assets/moniter2.jpg");
+          this.img = "/moniter2.jpg";
         }else if(number == 3){
           this.text = "多数ございます";
           this.title = "電源";
-          this.img = require("~/assets/power.jpg");
+          this.img = "/power.jpg";
         }else if(number == 4){
           this.text = "加湿器のほか、暖房や換気など空調調節いただけます。";
           this.title = "加湿器";
-          this.img = require("~/assets/water.jpg");
+          this.img = "/water.jpg";
         }else if(number == 5){
           this.text = "VRゲームです。「beat saber」のアプリがインストールされています。休憩にどうぞ";
           this.title = "Oculus Quest";
-          this.img = require("~/assets/oculus.jpg");
+          this.img = "/oculus.jpg";
         }else if(number == 6){
           this.text = "食材の持ち込みも可です。住人がいないので、冷蔵庫も空気を冷やして待っています。自由にお使いください。";
           this.title = "キッチン";
-          this.img = require("~/assets/cool.jpg");
+          this.img = "/cool.jpg";
         }else if(number == 7){
           this.text = "アサヒのスタイルフリーは私が好きなのでサービスです。";
           this.title = "発泡酒";
-          this.img = require("~/assets/beer.jpg");
+          this.img = "/beer.jpg";
         }else if(number == 8){
           this.text = "買いすぎてしまったのでサービスです。";
           this.title = "玉ねぎ";
-          this.img = require("~/assets/onion.jpg");
+          this.img = "/onion.jpg";
         }else if(number == 9){
           this.text = "賞味期限が切れているのでサービスです。";
           this.title = "coffee";
-          this.img = require("~/assets/coffee.jpg");
+          this.img = "/coffee.jpg";
         }
       },
       closeModal() {
@@ -281,29 +327,19 @@ html {
   font-weight: 500;
 }
 header {
-  background: url("~/assets/main.jpg") center center / cover no-repeat;
-    height: 70vh;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: white;
+  background: url("/main.jpg") center center / cover no-repeat;
+  height: 70vh;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2rem;
 }
 
-h1 {
-  font-weight: 100;
-  background: rgb(153,110,116,0.5);
-    padding: 1rem;
-    border-top-left-radius: 2000px 500px;
-    border-top-right-radius: 2000px 500px;
-    border-bottom-right-radius: 2000px 500px;
-    border-bottom-left-radius: 2000px 500px;
-    font-size: 1.5rem;
-}
-
-h2 {
+h1,h2 {
   text-align: center;
   color: rgb(153,110,116,0.5);
   margin: 0;
@@ -311,7 +347,7 @@ h2 {
 }
 
 h3 {
-  margin: 0;
+  margin: .5rem 0;
 }
 
 .h2-sub {
@@ -337,6 +373,10 @@ body {
   text-align: center;
 }
 
+.max-width-100 {
+  max-width: 100%;
+}
+
 .waku {
   padding-bottom: 3rem;
   width: 100%;
@@ -356,10 +396,34 @@ footer div{
     font-size: .8rem;
 }
 
+table {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+tbody {
+  display: inline;
+}
+
+th {
+  width: 20vw;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+td {
+  width: 40vw;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
 .bounce {
   animation: bounce 3s ease alternate;
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0 2rem 0;
   font-size: 1.3rem;
 }
 
@@ -473,20 +537,19 @@ footer div{
 }
 
 @media (min-width: 769px) {
-  h1 {
-    border-top-left-radius: 3000px 1500px;
-    border-top-right-radius: 3000px 1500px;
-    border-bottom-right-radius: 3000px 1500px;
-    border-bottom-left-radius: 3000px 1500px;
-    font-size: 2rem;
-    padding: 3rem;
-  }
   .waku {
     max-width: 777px;
     margin: auto;
   }
   .map-iframe {
     height: 500px;
+  }
+  th {
+    width: 200px;
+  }
+
+  td {
+    width: 400px;
   }
 }
 </style>
