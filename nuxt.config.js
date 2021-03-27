@@ -55,7 +55,7 @@ export default {
   ],
 
   'google-gtag': {
-    id: '-',
+    id: 'G-BWQVKNN17X',
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
