@@ -116,7 +116,7 @@
           <div class="col-12" style="max-width: 1024px;padding: .5rem">
             <h3>住所</h3>
             <span>
-            〒113-0021 東京都文京区本駒込2-28-28 シェアヴィ六義園<br>
+            〒113-0021 東京都文京区本駒込2-28-28<br>
             </span>
             <a href="https://goo.gl/maps/zXUAa3PjWG8VPhmbA" target="_blank" style="margin-bottom: .5rem">Google Map</a>
 
