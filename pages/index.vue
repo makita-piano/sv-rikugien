@@ -123,11 +123,6 @@
             <div class="col-12" style="max-width: 1024px;margin-top: .5rem">
               <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!4v1616769191130!6m8!1m7!1sheU33yrr2_Vllel9JKdMCg!2m2!1d35.73210896288906!2d139.7493929030151!3f246.22672751775977!4f-1.1164638152424828!5f3.325193203789971" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%"></iframe>
             </div>
-
-            <h3>駐車場</h3>
-            <span>
-            駐車場はございません。近隣のコインパーキング（提携外）をご案内させて頂いております。
-            </span>
           </div>
         </div>
       </div>
@@ -187,6 +182,7 @@
           わたしについて
         </h2>
         <div class="center-align">
+          ただの１住人です。休職中<br>
           <a href="https://creedo.jp/users/47430e40" target="_blank">https://creedo.jp/users/47430e40</a>
         </div>
       </div>
