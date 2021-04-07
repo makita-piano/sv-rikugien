@@ -3,6 +3,7 @@
     <header>
     </header>
     <div>
+      <p class="center-align font-size-0-8-mobile">※このページは１住人による非公式ページです。</p>
       <div class="waku">
         <h1>
           募集内容
@@ -12,7 +13,7 @@
         </div>
         <div class="padding-1">
           コワーキングスペースのような使い方ができるようにリビングを
-          整えていますので、遊びに来ませんか？？？
+          整えていますので、お友達として遊びに来ませんか？？？
           シェアハウスに興味がある方、もくもく作業したい方、就活合間のお茶スペースをお探しの方、、、
           どんな方でも大丈夫です！楽しい使い方をあなたが見つけてください。
         </div>
@@ -161,7 +162,7 @@
           貸出実績
         </h2>
         <div class="padding-1">
-          <table style="padding: 0 2rem;border-collapse: collapse;width: 100%">
+          <table style="padding: 0 1rem;border-collapse: collapse;width: 100%">
             <tbody>
               <tr v-for="i in day">
                 <th style="">
@@ -227,8 +228,7 @@
           {day: "3/26" , text: "サービス開始"},
           {day: "3/27" , text: "３名／コワーキングスペース"},
           {day: "4/02" , text: "３名／夕食・DVD鑑賞"},
-          {day: "4/03" , text: " - "},
-          {day: "4/04" , text: " - "},
+          {day: "4/04" , text: "１名／夕食"},
           {day: "4/05" , text: " - "},
           {day: "4/06" , text: " - "},
           {day: "4/07" , text: " - "},
@@ -327,7 +327,11 @@ header {
   display: flex;
   justify-content: center;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
+}
+
+.font-size-0-8-mobile {
+  font-size: .8rem
 }
 
 h1,h2 {
@@ -528,6 +532,9 @@ td {
 }
 
 @media (min-width: 769px) {
+  .font-size-0-8-mobile {
+    font-size: 1rem
+  }
   .waku {
     max-width: 777px;
     margin: auto;
