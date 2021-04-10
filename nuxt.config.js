@@ -9,11 +9,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'シェアハウスを体験してみませんか？立地は駒込駅から徒歩５分。１日、コワーキングスペースのような使い方をしていただいて大丈夫です！' },
+      { hid: 'description', name: 'description', content: '駒込駅から徒歩５分。１日、コワーキングスペースのような使い方をしていただいて大丈夫です！シェアハウスへ遊びにきませんか？' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'klavier.page' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'share-vie-rikugien' },
-      { hid: 'og:description', property: 'og:description', content: 'pシェアハウスを体験してみませんか？立地は駒込駅から徒歩５分。１日、コワーキングスペースのような使い方をしていただいて大丈夫です！' },
+      { hid: 'og:description', property: 'og:description', content: '駒込駅から徒歩５分。１日、コワーキングスペースのような使い方をしていただいて大丈夫です！シェアハウスへ遊びにきませんか？' },
       { hid: 'og:image', property: 'og:image', content: '/main.jpg' },
       { hid: 'og:url', property: 'og:url', content: 'https://sv-rikugien.klavier.page' },
     ],
