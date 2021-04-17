@@ -1,5 +1,7 @@
+export { default as ImgImagin } from '../../components/ImgImagin.vue'
 export { default as TimeRex } from '../../components/TimeRex.vue'
 
+export const LazyImgImagin = import('../../components/ImgImagin.vue' /* webpackChunkName: "components/img-imagin" */).then(c => wrapFunctional(c.default || c))
 export const LazyTimeRex = import('../../components/TimeRex.vue' /* webpackChunkName: "components/time-rex" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
