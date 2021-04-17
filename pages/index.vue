@@ -50,55 +50,55 @@
         <div class="grid" style="text-align: center">
           <div class="col-4_sm-6" @click="openModal(1)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/wifi.jpg" width="230px" class="max-width-100" alt="env-1" />
+              <nuxt-img src="/wifi.jpg" width="230" class="max-width-100" alt="env-1" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Wi-Fi</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(2)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/moniter.jpg" width="230px" class="max-width-100" alt="env-2" />
+              <nuxt-img src="/moniter.jpg" width="230" class="max-width-100" alt="env-2" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">モニター</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(3)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/power.jpg" width="230px" class="max-width-100" alt="env-3" />
+              <nuxt-img src="/power.jpg" width="230" class="max-width-100" alt="env-3" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">電源</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(4)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/water.jpg" width="230px" class="max-width-100" alt="env-4" />
+              <nuxt-img src="/water.jpg" width="230" class="max-width-100" alt="env-4" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">加湿器</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(5)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/oculus.jpg" width="230px" class="max-width-100" alt="env-5" />
+              <nuxt-img src="/oculus.jpg" width="230" class="max-width-100" alt="env-5" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">Oculus Quest</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(6)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/kitchen.jpg" width="230px" class="max-width-100" alt="env-6" />
+              <nuxt-img src="/kitchen.jpg" width="230" class="max-width-100" alt="env-6" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">キッチン</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(7)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/beer.jpg" width="230px" class="max-width-100" alt="env-7" />
+              <nuxt-img src="/beer.jpg" width="230" class="max-width-100" alt="env-7" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">発泡酒</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(8)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/onion.jpg" width="230px" class="max-width-100" alt="env-8" />
+              <nuxt-img src="/onion.jpg" width="230" class="max-width-100" alt="env-8" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">玉ねぎ</span>
           </div>
           <div class="col-4_sm-6" @click="openModal(9)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/coffee.jpg" width="230px" class="max-width-100" alt="env-9" />
+              <nuxt-img src="/coffee.jpg" width="230" class="max-width-100" alt="env-9" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
           </div>
@@ -202,7 +202,7 @@
           <div class="modal-content" style="overflow-y: auto;max-height: 80vh;">
             <div class="grid col-12">
               <div class="col-12" style="max-width: 777px;margin: auto;text-align: center">
-                <nuxt-img :src="img" width="300px" style="height: auto" alt="env-1" />
+                <nuxt-img :src="img" width="300" style="height: auto" alt="env-1" />
                 <div class="col-12" style="padding: 1rem;text-align: left">
                   {{ text }}
                 </div>
