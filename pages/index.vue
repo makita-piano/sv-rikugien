@@ -106,7 +106,7 @@
             <div style="position: relative;padding: 0 1rem">
               <nuxt-img src="/mahjong.jpg" width="230" class="max-width-100" alt="env-9" />
             </div>
-            <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
+            <span style="padding-left: 1rem;text-decoration: underline">電動麻雀卓</span>
           </div>
         </div>
       </div>
