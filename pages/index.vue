@@ -14,7 +14,7 @@
         <div class="padding-1">
           コワーキングスペースのような使い方ができるようにリビングを
           整えていますので、お友達として遊びに来ませんか？？？
-          シェアハウスに興味がある方、もくもく作業したい方、就活合間のお茶スペースをお探しの方、、、
+          シェアハウスに興味がある方、雀荘をお探しの方、もくもく作業したい方、就活合間のお茶スペースをお探しの方、、、
           どんな方でも大丈夫です！楽しい使い方をあなたが見つけてください。
         </div>
         <div class="padding-1 center-align">
@@ -99,6 +99,12 @@
           <div class="col-4_sm-6" @click="openModal(9)" style="margin-bottom: 3rem">
             <div style="position: relative;padding: 0 1rem">
               <nuxt-img src="/coffee.jpg" width="230" class="max-width-100" alt="env-9" />
+            </div>
+            <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
+          </div>
+	  <div class="col-4_sm-6" @click="openModal(10)" style="margin-bottom: 3rem">
+            <div style="position: relative;padding: 0 1rem">
+              <nuxt-img src="/mahjong.jpg" width="230" class="max-width-100" alt="env-9" />
             </div>
             <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
           </div>
@@ -282,6 +288,10 @@
           this.text = "賞味期限が切れているのでサービスです。";
           this.title = "coffee";
           this.img = "/coffee.jpg";
+        }else if(number == 10){
+          this.text = "6局に1回くらい引っかかりますが、すぐ直せます。点数表示ナシ。";
+          this.title = "電動麻雀卓AmosJP";
+          this.img = "/mahjong.jpg";
         }
       },
       closeModal() {
