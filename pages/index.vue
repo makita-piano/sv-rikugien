@@ -328,6 +328,10 @@ html {
 }
 header {
   background: url("/main.jpg") center center / cover no-repeat;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size:cover;
+  background-size: cover;
   height: 70vh;
   justify-content: center;
   position: relative;
