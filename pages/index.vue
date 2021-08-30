@@ -179,6 +179,7 @@
               </tr>
             </tbody>
           </table>
+	  ※気が向いたら記録しています。
         </div>
       </div>
     </div>
@@ -234,18 +235,13 @@
           {day: "3/27" , text: "３名／コワーキングスペース"},
           {day: "4/02" , text: "３名／夕食・DVD鑑賞"},
           {day: "4/04" , text: "１名／夕食"},
-          {day: "4/05" , text: " - "},
-          {day: "4/06" , text: " - "},
-          {day: "4/07" , text: " - "},
-          {day: "4/08" , text: " - "},
-          {day: "4/09" , text: " - "},
-          {day: "4/10" , text: " - "},
-          {day: "4/11" , text: " - "},
-          {day: "4/12" , text: " - "},
-          {day: "4/13" , text: " - "},
-          {day: "4/14" , text: " - "},
-          {day: "4/15" , text: " - "},
-          {day: "4/16" , text: " - "},
+          {day: "4/23" , text: "３名／福島、桃収穫祭"},
+          {day: "4/24" , text: "３名／屋上BBQ"},
+          {day: "5/03" , text: "２名／ライブ配信"},
+          {day: "6/01" , text: "３名／麻雀"},
+	  {day: "7/09" , text: "piscineおつ会"},
+          {day: "7/24" , text: "ビールサーバー導入"},
+          {day: "8/13" , text: "42tokyo入学会"},
         ]
       }
     },
@@ -289,7 +285,7 @@
           this.title = "coffee";
           this.img = "/coffee.jpg";
         }else if(number == 10){
-          this.text = "6局に1回くらい引っかかりますが、すぐ直せます。点数表示ナシ。";
+          this.text = "点数表示ナシ。3麻対応。";
           this.title = "電動麻雀卓AmosJP";
           this.img = "/mahjong.jpg";
         }
