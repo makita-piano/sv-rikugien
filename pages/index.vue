@@ -126,7 +126,11 @@
             〒113-0021 東京都文京区本駒込2-28-28<br>
             </span>
             <a href="https://goo.gl/maps/zXUAa3PjWG8VPhmbA" target="_blank" style="margin-bottom: .5rem">Google Map</a>
-
+            <h3>アクセス</h3>
+            <span>
+            駒込駅：徒歩5分<br>
+	    千石駅：徒歩5分
+            </span>
             <div class="col-12" style="max-width: 1024px;margin-top: .5rem">
               <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!4v1616769191130!6m8!1m7!1sheU33yrr2_Vllel9JKdMCg!2m2!1d35.73210896288906!2d139.7493929030151!3f246.22672751775977!4f-1.1164638152424828!5f3.325193203789971" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%"></iframe>
             </div>
