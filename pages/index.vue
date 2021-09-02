@@ -3,7 +3,7 @@
     <header>
     </header>
     <div>
-      <p class="center-align font-size-0-8-mobile">※このページは１住人による非公式ページです。</p>
+      <p class="center-align font-size-0-8-mobile">※このページは１住人による非公式ページです</p>
       <div class="waku">
         <h1>
           募集内容
