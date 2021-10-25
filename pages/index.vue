@@ -9,7 +9,7 @@
           募集内容
         </h1>
         <div class="bounce">
-          シェアハウスに住人が<br class="display-none-pc"><span class="watashi">私</span>だけになってしまいました・・・！
+          シェアハウスに住人が<br><span class="watashi">私</span>だけになってしまいました・・・！
         </div>
         <div class="padding-1">
           コワーキングスペースのような使い方ができるようにリビングを
@@ -48,65 +48,11 @@
           設備
         </h2>
         <div class="grid" style="text-align: center">
-          <div class="col-4_sm-6" @click="openModal(1)" style="margin-bottom: 3rem">
+          <div v-for="item in items" class="col-4_sm-6" @click="openModal(item['id'])" style="margin-bottom: 3rem;cursor: pointer" :key="item['id']">
             <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/wifi.jpg" width="230" class="max-width-100" alt="env-1" />
+              <nuxt-img :src="item['src']" width="230" class="max-width-100" :alt="item['alt']" />
             </div>
-            <span style="padding-left: 1rem;text-decoration: underline">Wi-Fi</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(2)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/moniter.jpg" width="230" class="max-width-100" alt="env-2" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">モニター</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(3)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/power.jpg" width="230" class="max-width-100" alt="env-3" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">電源</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(4)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/water.jpg" width="230" class="max-width-100" alt="env-4" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">加湿器</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(5)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/oculus.jpg" width="230" class="max-width-100" alt="env-5" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">Oculus Quest</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(6)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/kitchen.jpg" width="230" class="max-width-100" alt="env-6" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">キッチン</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(7)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/beer.jpg" width="230" class="max-width-100" alt="env-7" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">発泡酒</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(8)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/onion.jpg" width="230" class="max-width-100" alt="env-8" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">玉ねぎ</span>
-          </div>
-          <div class="col-4_sm-6" @click="openModal(9)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/coffee.jpg" width="230" class="max-width-100" alt="env-9" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">coffee</span>
-          </div>
-	  <div class="col-4_sm-6" @click="openModal(10)" style="margin-bottom: 3rem">
-            <div style="position: relative;padding: 0 1rem">
-              <nuxt-img src="/mahjong.jpg" width="230" class="max-width-100" alt="env-9" />
-            </div>
-            <span style="padding-left: 1rem;text-decoration: underline">電動麻雀卓</span>
+            <span style="padding-left: 1rem;text-decoration: underline">{{ item['title'] }}</span>
           </div>
         </div>
       </div>
@@ -120,16 +66,16 @@
           <div class="col-12" style="max-width: 1024px">
             <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.7642365881884!2d139.7470280155736!3d35.732016380182536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dbe58002c57%3A0x2782e0d9cd45dbba!2z44CSMTEzLTAwMjEg5p2x5Lqs6YO95paH5Lqs5Yy65pys6aeS6L6877yS5LiB55uu77yS77yY4oiS77yS77yY!5e0!3m2!1sja!2sjp!4v1616769040034!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%"></iframe>
           </div>
-          <div class="col-12" style="max-width: 1024px;padding: .5rem">
+          <div class="col-12" style="max-width: 1024px;padding: 0 .5rem">
             <h3>住所</h3>
             <span>
             〒113-0021 東京都文京区本駒込2-28-28<br>
             </span>
             <a href="https://goo.gl/maps/zXUAa3PjWG8VPhmbA" target="_blank" style="margin-bottom: .5rem">Google Map</a>
-            <h3>アクセス</h3>
+            <h3 style="margin-top: 2rem">アクセス</h3>
             <span>
-            駒込駅：徒歩5分<br>
-	    千石駅：徒歩5分
+              駒込駅：徒歩5分<br>
+              千石駅：徒歩5分
             </span>
             <div class="col-12" style="max-width: 1024px;margin-top: .5rem">
               <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!4v1616769191130!6m8!1m7!1sheU33yrr2_Vllel9JKdMCg!2m2!1d35.73210896288906!2d139.7493929030151!3f246.22672751775977!4f-1.1164638152424828!5f3.325193203789971" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%"></iframe>
@@ -173,7 +119,7 @@
         <div class="padding-1">
           <table style="padding: 0 1rem;border-collapse: collapse;width: 100%">
             <tbody>
-              <tr v-for="i in day">
+              <tr v-for="i in days" :key="i['day']">
                 <th style="">
                   {{ i["day"] }}
                 </th>
@@ -204,16 +150,16 @@
       </div>
     </footer>
     <transition name="modal" appear v-if="modal">
-      <div class="modal modal-overlay" @click="closeModal">
+      <div class="modal modal-overlay" style="cursor: pointer" @click.self="closeModal">
         <div class="modal-window" style="max-height: 90vh">
           <div class="modal-header" style="position: relative">
             {{ title }}
-            <button @click="closeModal" style="position: absolute;right: 1rem;top: .5rem;height: 1.8rem;width: 1.8rem;padding: .05rem 0 0 0">×</button>
+            <button @click="closeModal" style="position: absolute;right: .6rem;top: 1rem;background: none;border: none;color: #555;cursor: pointer">×</button>
           </div>
           <div class="modal-content" style="overflow-y: auto;max-height: 80vh;">
             <div class="grid col-12">
               <div class="col-12" style="max-width: 777px;margin: auto;text-align: center">
-                <nuxt-img :src="img" width="300" style="height: auto" alt="env-1" />
+                <nuxt-img :src="modal_src" width="300" style="height: auto" alt="env-1" />
                 <div class="col-12" style="padding: 1rem;text-align: left">
                   {{ text }}
                 </div>
@@ -224,7 +170,6 @@
       </div>
     </transition>
   </div>
-
 </template>
 
 <script>
@@ -233,65 +178,37 @@
       return {
         modal: false,
         text: undefined,
-        img: undefined,
-        day: [
+        title: '',
+        modal_src: undefined,
+        days: [
           {day: "3/26" , text: "サービス開始"},
           {day: "3/27" , text: "３名／コワーキングスペース"},
-          {day: "4/02" , text: "３名／夕食・DVD鑑賞"},
-          {day: "4/24" , text: "３名／屋上BBQ"},
+          {day: "4/02" , text: "３名／夕食・DVD鑑賞会"},
+          {day: "4/24" , text: "３名／屋上BBQ会"},
           {day: "5/03" , text: "２名／ライブ配信リハ"},
           {day: "6/01" , text: "３名／麻雀"},
-	  {day: "7/09" , text: "piscine終了"},
-	  {day: "7/22" , text: "弦楽演奏リハ"},
-          {day: "7/31" , text: "ビールサーバー導入"},
-          {day: "8/13" , text: "42tokyo入学"},
+          {day: "7/09" , text: "piscine終了会"},
+          {day: "7/22" , text: "弦楽演奏リハ"},
+          {day: "7/31" , text: "ビールサーバー導入会"},
+          {day: "8/13" , text: "42tokyo入学会"},
+        ],
+        items: [
+          {id: 0 , title: "Wi-Fi", alt: "wifi", src: "/wifi.jpg", modal_src: "/wifi2.jpg", text: "まあまあの速度がでます。"},
+          {id: 1 , title: "モニター", alt: "moniter", src: "/moniter.jpg", modal_src: "/moniter2.jpg", text: "2台用意がございます。台を高くすればスタンドデスクも可能です。"},
+          {id: 2 , title: "電源", alt: "power", src: "/power.jpg", modal_src: "/power.jpg", text: "多数ございます"},
+          {id: 3 , title: "Oculus Quest", alt: "oculus", src: "/oculus.jpg", modal_src: "/oculus.jpg", text: "VRゲームです。「beat saber」のアプリがインストールされています。休憩にどうぞ"},
+          {id: 4 , title: "キッチン", alt: "kitchen", src: "/kitchen.jpg", modal_src: "/cool.jpg", text: "食材の持ち込みも可です。住人がいないので、冷蔵庫も空気を冷やして待っています。自由にお使いください。"},
+          {id: 5 , title: "発泡酒", alt: "beer", src: "/beer2.jpg", modal_src: "/beer.jpg", text: "アサヒのスタイルフリーは私が好きなのでサービスです。"},
+          {id: 6 , title: "電動麻雀卓AmosJP", alt: "mahjong", src: "/mahjong.jpg", modal_src: "/mahjong.jpg", text: "点数表示ナシ。3麻対応。"},
         ]
       }
     },
     methods: {
       openModal(number) {
-        this.modal = true;
-        if(number == 1){
-          this.text = "まあまあの速度がでます。";
-          this.title = "Wi-Fi";
-          this.img = "/wifi2.jpg";
-        }else if(number == 2){
-          this.text = "2台用意がございます。台を高くすればスタンドデスクも可能です。";
-          this.title = "モニター";
-          this.img = "/moniter2.jpg";
-        }else if(number == 3){
-          this.text = "多数ございます";
-          this.title = "電源";
-          this.img = "/power.jpg";
-        }else if(number == 4){
-          this.text = "加湿器のほか、暖房や換気など空調調節いただけます。";
-          this.title = "加湿器";
-          this.img = "/water.jpg";
-        }else if(number == 5){
-          this.text = "VRゲームです。「beat saber」のアプリがインストールされています。休憩にどうぞ";
-          this.title = "Oculus Quest";
-          this.img = "/oculus.jpg";
-        }else if(number == 6){
-          this.text = "食材の持ち込みも可です。住人がいないので、冷蔵庫も空気を冷やして待っています。自由にお使いください。";
-          this.title = "キッチン";
-          this.img = "/cool.jpg";
-        }else if(number == 7){
-          this.text = "アサヒのスタイルフリーは私が好きなのでサービスです。";
-          this.title = "発泡酒";
-          this.img = "/beer.jpg";
-        }else if(number == 8){
-          this.text = "買いすぎてしまったのでサービスです。";
-          this.title = "玉ねぎ";
-          this.img = "/onion.jpg";
-        }else if(number == 9){
-          this.text = "賞味期限が切れているのでサービスです。";
-          this.title = "coffee";
-          this.img = "/coffee.jpg";
-        }else if(number == 10){
-          this.text = "点数表示ナシ。3麻対応。";
-          this.title = "電動麻雀卓AmosJP";
-          this.img = "/mahjong.jpg";
-        }
+        this.modal = true
+        this.text = this.items[number]['text']
+        this.title = this.items[number]['title']
+        this.modal_src = this.items[number]['modal_src']
       },
       closeModal() {
         this.modal = false
@@ -300,8 +217,372 @@
   }
 </script>
 
+<style>
+/* normalize */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
 
 
+/* semantic */
+@media (max-width: 768px) {
+  .display-none-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .display-none-pc {
+    display: none;
+  }
+}
+</style>
 <style>
 /* gridlex */
 [class*='grid-'] , [class^='grid'] {
@@ -324,6 +605,8 @@ html {
   color: #939597;
   font-style: normal;
   font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: .1rem;
 }
 header {
   background: url("/main.jpg") center center / cover no-repeat;
