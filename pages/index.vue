@@ -582,8 +582,8 @@ template {
     display: none;
   }
 }
-</style>
-<style>
+
+
 /* gridlex */
 [class*='grid-'] , [class^='grid'] {
   margin: 0;
@@ -714,7 +714,7 @@ td {
   animation: bounce 3s ease alternate;
   text-align: center;
   margin: 1rem 0 2rem 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .map-iframe {
