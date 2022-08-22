@@ -2,6 +2,13 @@
   <div>
     <header>
     </header>
+    <div class="bg-color">
+      <div class="">
+        <h2>
+          現在はサービスを停止しています
+        </h2>
+      </div>
+    </div>
     <div>
       <p class="center-align font-size-0-8-mobile">※このページは１住人による非公式ページです</p>
       <div class="waku">
@@ -622,7 +629,6 @@ header {
   display: flex;
   justify-content: center;
   color: white;
-  margin-bottom: .5rem;
 }
 
 .font-size-0-8-mobile {
