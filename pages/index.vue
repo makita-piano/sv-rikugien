@@ -4,7 +4,7 @@
     </header>
     <div class="bg-color">
       <div class="">
-        <h2>
+        <h2 style="color: red">
           現在はサービスを停止しています
         </h2>
       </div>
